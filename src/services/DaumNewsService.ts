@@ -74,11 +74,6 @@ export class DaumNewsService {
     }
   }
 
-  async getWorldSoccerNews(): Promise<NewsItem[]> {
-    return this.getNews('worldSoccer');
-  }
-
-  async getGolfNews(): Promise<NewsItem[]> {
-    return this.getNews('golf');
-  }
+  // 개별 카테고리 함수들은 제거 - getNews() 함수로 통합
+  // 새로운 카테고리 추가 시 getNews('newCategory') 사용
 }
